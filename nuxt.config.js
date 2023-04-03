@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nut',
+    title: 'nuttawat dev',
     htmlAttrs: {
       lang: 'en'
     },
@@ -12,8 +12,10 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
     ]
+    
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -35,7 +37,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["nuxt-lodash"
+  modules: ["nuxt-lodash",'nuxt-material-design-icons-iconfont'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -53,5 +55,10 @@ export default {
   ],
   css: [
     '@/assets/main.css',
+    'material-icons/iconfont/material-icons.css',
+    'material-symbols/index.css',
   ],
+  server: {
+    port: 8000 // default: 3000
+  }
 }

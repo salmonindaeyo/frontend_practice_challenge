@@ -1,5 +1,5 @@
 {
-  "name": "nut",
+  "name": "frontend_practice_challenge1",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,18 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "apexcharts": "^3.36.3",
     "blob-polyfill": "^7.0.20220408",
     "core-js": "^3.25.3",
+    "eslint": "^8.37.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^9.10.0",
+    "lodash": "^4.17.21",
+    "material-icons": "^1.13.4",
+    "material-symbols": "^0.5.5",
     "nuxt": "^2.15.8",
+    "nuxt-material-design-icons-iconfont": "^1.0.2",
     "vue": "^2.7.10",
     "vue-apexcharts": "^1.6.2",
     "vue-d3-cloud": "^0.2.0",
