@@ -13,7 +13,14 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css',
+        integrity: 'sha384-NwyCcPvM+yW8RnOfLMX9BYTtTvjUrSvOxSbO+ZdmzAdgnm4Dszv4Qpr4Rmwcl9Q2',
+        crossorigin: 'anonymous'
+      }
+  
     ]
     
   },
@@ -24,7 +31,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: '@/plugins/vueD3.js', ssr: false },
-  { src: '@/plugins/vue-apexchart.js', ssr: false }
+  { src: '@/plugins/vue-apexchart.js', ssr: false },
+  { src:  '@/plugins/aos.js', ssr: false }
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

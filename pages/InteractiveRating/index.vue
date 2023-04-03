@@ -1,7 +1,7 @@
 <template>
   <div class="flex bg-black items-center justify-center relative h-screen select-none">
     <div class="w-[25.25rem] h-[25.25rem] bg-gradient-to-t from-[#151629] to-[#27283B] rounded-3xl">
-      <div v-if="isVoteSuccess" class="flex flex-col justify-center items-center p-8 space-y-4">
+      <div v-if="isVoteSuccess" data-aos="fade-up" class="flex flex-col justify-center items-center p-8 space-y-4">
           <img src="/pic/illustration-thank-you.svg" class="w-36 mt-4 mb-4" />
           <div class="py-2 bg-[#252840] text-orange-500 font-semibold text-[14px] rounded-full px-4"> You selected {{ indexVote + 1 }} out of 5 </div>
           <div class="text-[24px] text-white pt-2">Thank you!</div>
@@ -44,6 +44,12 @@ export default {
       indexVote : null,
       isVoteSuccess : false
     }
+  },
+    mounted() {
+    import('aos/dist/aos.css')
+    import('aos').then((AOS) => {
+      AOS.init()
+    })
   },
   methods: {
     voteRating(index) {
